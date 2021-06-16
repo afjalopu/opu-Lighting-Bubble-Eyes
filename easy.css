@@ -1,0 +1,265 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Patrick Hand', cursive;
+}
+.motherdiv
+{
+    width: 100%;
+    height: 100vh;
+    background-image: url(nong-vang-0b4QY1ZkdYg-unsplash.jpg);
+    background-position: center;
+    background-size: contain;
+    background-attachment: fixed; 
+  }
+.upperdiv
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 30px;
+   position: relative;
+}
+.navbar ul{
+   padding-left: 200px;
+}
+.navbar ul a
+{
+   text-decoration: none;
+   padding: 5px 10px;
+   font-weight: bolder;
+   font-size: 1.3rem;
+   color: rgb(0, 0, 0);
+   text-transform: uppercase;
+   position: relative;
+}
+.navbar ul a::after
+{
+    content: '';
+    height: 3px;
+    width: 0%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(0, 219, 201);
+    transition: 1.5s;
+}
+.navbar ul a:hover::after
+{
+    width: 100%;
+}
+.signup
+{
+    margin-right: 50px;
+}
+.signup a
+{
+   text-decoration: none;
+   font-size: 2.2rem;
+   text-transform: uppercase;
+   color: aqua;
+   position: relative;
+   padding-bottom: 3px;
+}
+.signup a::after
+{
+    content: '';
+    height: 3px;
+    width: 0%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(218, 255, 5);
+    transition: 1.5s;
+}
+.signup a:hover:after
+{
+    width: 100%;
+}
+.logo i
+{
+    color: rgb(231, 245, 33);
+    transition: 1.4s;
+}
+.logo i:hover
+{
+ color: cyan;
+ transform: rotate(360deg);
+}
+.middlediv
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.middlediv h1
+{
+    color: rgb(245, 0, 0);
+    font-size: 3rem;
+    padding: 10px ;
+}
+.middlediv p
+{
+    font-size: 1.4rem;
+    color: rgb(0, 0, 0);
+    padding: 5px ;
+}
+button{
+    padding: 7px 7px;
+    font-size: 1rem;
+    font-weight: bolder;
+    margin: 8px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: rgb(18, 0, 107);
+    position: relative;
+}
+span
+{
+    background-color: rgb(101, 255, 40);
+    height: 100%;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    position: absolute;
+    transition: 1.3s;
+}
+button:hover span
+{
+    width: 100%;
+   border-radius: 10px;
+}
+button:hover
+{
+   border: none;
+   color: rgb(0, 0, 0);
+}
+.sidebardiv
+{
+    width: 45px;
+    height: 100vh;
+    background: linear-gradient( rgb(253, 85, 19), rgb(231, 2, 2), rgb(160, 8, 66),rgb(75, 249, 255));
+    right: 0;
+    top: 0;
+    position: absolute;
+}
+.menu
+{
+   color: rgb(4, 0, 228);
+   text-align: center;
+   margin-top: 30px;
+}
+.middlediv
+{
+    text-align: center;
+}
+.middlediv i
+{
+   padding-top: 10px;
+   color: rgb(0, 221, 210);
+}
+.middlediv i:hover
+{
+    color: rgb(255, 255, 255);
+}
+.bottomdiv
+{
+    text-align: center;
+    bottom: 10px ;
+    position: absolute;
+    transform: translateY(-50%);
+}
+.bottomdiv i
+{
+    padding-top: 10px;
+    color: rgb(255, 255, 255);
+    transition: .5s;
+}
+.bottomdiv i:hover
+{
+    color: rgb(0, 0, 0);
+}
+
+.bubblediv
+{
+   bottom: 0;
+   position: absolute;
+   display: flex;
+   width: 100%;
+   justify-content: space-around;
+}
+.bubblediv img
+{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    animation: bubble 7s ease-in-out infinite;
+}
+@keyframes bubble{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }  
+    70%{
+        opacity: 1;
+    }  
+    100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+}
+.bubblediv img:nth-child(1)
+{
+    height: 34px;
+    width: 34px;
+    animation-delay: 5s;
+}
+.bubblediv img:nth-child(2)
+{
+    height: 50px;
+    width: 50px;
+    animation-delay: 2s;
+}
+.bubblediv img:nth-child(3)
+{
+    height: 30px;
+    width: 30px;
+    animation-delay: 3s;
+}
+.bubblediv img:nth-child(4)
+{
+    height: 60px;
+    width: 60px;
+    animation-delay: 4s;
+}
+.bubblediv img:nth-child(5)
+{
+    height: 25px;
+    width: 25px;
+    animation-delay: 5s;
+}
+.bubblediv img:nth-child(6)
+{
+    height: 60px;
+    width: 60px;
+    animation-delay: 2s;
+}
+.bubblediv img:nth-child(7)
+{
+    height: 30px;
+    width: 30px;
+    animation-delay: 5s;
+}
+.bubblediv img:nth-child(8)
+{
+    height: 80px;
+    width: 80px;
+    animation-delay: 8s;
+}
